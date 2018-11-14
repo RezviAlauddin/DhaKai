@@ -1,0 +1,17 @@
+extends layout
+
+block content	
+	.jumbotron
+		.container
+			form(method='post',action='users/register')
+				h2 Contact Us
+				.form-group
+					level Name
+					input.form-control(type='text',name='name',placeholder='Name ')
+				.form-group
+					level Email
+					input.form-control(type='email',name='email',placeholder='example@gmail.com ')
+				.form-group
+					level Message
+					input.form-control(name='message',placeholder='Enter  message ')
+				button.btn.btn-default(type='submit') Submit
